@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+
+	<meta charset="UTF-8">
+    <TITLE>Basic HTML Sample Page</TITLE>
+     <script type="text/javascript">
+      function papildyti(){
+         document.getElementById("naujas").innerHTML+="<input type='password' id = 'lol' value='pass'> </input><input type='submit' value='patvirtinti'></input>";
+        document.getElementById("naujas").innerHTML+="<textarea>random text</textarea>";
+        document.getElementById("naujas").innerHTML+="<select><option>Vienas</option><option>Du</option><option>Trys</option></select>";
+    }
+   </script>
+  </HEAD>
+  <BODY BGCOLOR="WHITE">
+    <CENTER>
+      <H1>A Simple Sample Web Page</H1>
+      <IMG id="eyeye" SRC="http://www.mohumanities.org/wp-content/uploads/2012/05/I-Spy-with-My-Little-Eye1.jpg">
+      <H4>I spy with my little eye</H4>
+      <H2>Staged HTML page</H2>
+        <div id="naujas">
+          <script type="text/javascript">
+            setTimeout(function(){papildyti()},5000);
+          </script>
+        </div>
+    </CENTER>
+    <p style="padding: 50px;  text-indent : 20px;">
+      I spy is a guessing game. One player chooses an object that is visible to all the players and says, "I spy with my little eye something beginning with ...", naming the letter the chosen object starts with (e.g. "I spy with my little eye something beginning with C" if the chosen object is a car). Other players have to guess the chosen object.[1] An alternative version is played where the colour is given rather than the initial letter (e.g. "I spy with my little eye something blue")[2]
+      I spy is often played with young children as a means to avert boredom in long journeys. A survey by British insurance company Direct Line found that 58% of families played I spy, and 65% of the parents consulted had played it on journeys as a child.[3]
+      The Oxford English Dictionary (OED) defines it, under Spy giving the earliest citation as a mention in Rosamond Lehmann's 1946 work The Gipsy's Baby.[2] One etymological website though reports an earlier mention in a 1937 Canadian publication.[4]
+      The game and its wording are well known in western popular culture, for example the title of the 2002 horror film My Little Eye uses part of the wording from the game.
+    </p>
+
+    <TABLE border="1" width="100%">
+      <TR>
+
+      <TD bgcolor="#000000" width="20%">
+      <FONT color="#ffffff">
+        <B>This is column one</B>
+        <A HREF="http://one.lt">One.lt</A>
+      </TD>
+
+      <TD bgcolor="#bee3c2" id ="aaa" width="60%"> <B>This is column two</B></TD>
+
+      <TD bgcolor="#ff8000" width="20%"><font color="#804000"><B>This is the third column<BR>Some important text.</B>
+      </FONT>
+      </TD>
+
+      </TR>
+    </TABLE>
+    <BUTTON  style="position: absolute;  float: right;"> Press here for nothing</BUTTON>
+
+    <!-- A default button-group with small buttons inside -->
+    <CENTER>
+      <form id="msgbox" action="#" value="bbb" method="get">
+        <label for="msg">your message</label>
+        <input id="msg" value="a" />
+        <button>SEND</button>
+      </form>
+      <div id='buttonContainer'>
+          <h2>Button Group</h2>
+          <button class='button'>Button 1</button>
+          <button class='button'>Button 2</button>
+          <button class='button'>Button 3</button>
+      </div>
+    </CENTER>
+
+
+    <!-- Codes by HTML.am -->
+    <input id="txtInpt"> Input here </input>
+    <TEXTAREA></TEXTAREA>
+    <marquee behavior="slide" direction="left" scrollamount="1"><img id="fish1" src="public/fish-swimming.gif" width="94" height="88" alt="Swimming fish" /></marquee>
+    <marquee behavior="slide" direction="left" scrollamount="2"><img src="public/fish-swimming.gif" width="94" height="88" alt="Swimming fish" /></marquee>
+    <marquee behavior="slide" direction="left" scrollamount="3"><img src="public/fish-swimming.gif" width="94" height="88" alt="Swimming fish" /></marquee>
+    <marquee behavior="slide" direction="left" scrollamount="4"><img src="public/fish-swimming.gif" width="94" height="88" alt="Swimming fish" /></marquee>
+    <marquee behavior="slide" direction="left" scrollamount="5"><img src="public/fish-swimming.gif" width="94" height="88" alt="Swimming fish" /></marquee>
+    <H1>Useless text</H1>
+
+    <H2>More useless text</H2>
+
+    <H3>Even more useless text</H3>
+
+    <H4>[...] more useless text</H4>
+
+    <H5>You kidding right?</H5>
+
+    <H6>The end</H6>
+
+    <CENTER>
+      <script src="build/userTracking.js"></script>
+      <!--<script src="//localhost:35729/livereload.js"></script>-->
+  </BODY>
+
+</HTML>

@@ -1,0 +1,7 @@
+node_modules
+build/*.js
+.grunt
+_specRunner.html
+.sublime-grunt.cache
+*.orig
+.idea/

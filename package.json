@@ -1,0 +1,35 @@
+{
+  "name": "userTracking",
+  "version": "0.0.9",
+  "description": "userTracking\r ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simanaitis/user-tracker-in-web-script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simanaitis/user-tracker-in-web-script/issues"
+  },
+  "homepage": "https://github.com/simanaitis/user-tracker-in-web-script",
+  "devDependencies": {
+    "browserify": "11.0.x",
+    "connect": "^2.13.0",
+    "grunt": "^0.4.2",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-jasmine": "^0.6.1",
+    "grunt-contrib-jshint": "^0.8.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-release": "^0.7.0",
+    "grunt-remove-logging": "^0.2.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.10.2"
+  }
+}
