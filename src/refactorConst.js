@@ -1,21 +1,21 @@
 module.exports = (function Const() {
 
-	var BASE,
+	var BASE = 'http://localhost:3000/api/',
 		KEY = 'userTracking',
 		VISITKEY = 'SessionId';
 
-    if (location.host.indexOf('localhost') !== -1) {
+    /*if (location.host.indexOf('localhost') !== -1) {
         BASE = 'http://localhost:3000/api/';
     } else if (location.host.indexOf('herokuapp') !== -1) {
         BASE = '';
-    }
+    }*/
 
 	return {
 		SESSION_STOPPED: 'doNothing',
 		SESSION_FAILED: 'failed',
 		SESSION_NAME: 'userTracking',
 
-		SESSION_TIME: 60 * 1000,
+		SESSION_TIME: 60 * 60 * 1000,
 		INTERVAL_TIME: 20000,
 		MAX_ALLOWED_SIZE: 10,
 

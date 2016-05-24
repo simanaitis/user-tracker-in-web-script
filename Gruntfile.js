@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 //'<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'src/*.js',
+                src: 'build/<%= pkg.name %>.source.js',
                 dest: 'build/<%= pkg.name %>.min.js'
             }
         },
@@ -144,11 +144,10 @@ module.exports = function(grunt) {
                 // the files to concatenate
                 src: [
                     // //global variables
-                    // 'src/global/*.js',
+                     'src/polyfils/*.js',
                     // //modules
                     // 'src/!(app).js',
                     // //then main app file
-                    // 'src/app.js'
                     'build/<%= pkg.name %>.js'
                 ],
                 // the location of the resulting JS file
@@ -194,12 +193,19 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-release');
     grunt.loadNpmTasks('grunt-browserify');
 
-    // Default task(s).
+    /*// Default task(s).
     grunt.registerTask('default', function() {
-        var tasks = ['jshint:beforeConcat', 'browserify', 'concat:sourceFiles',
+        var tasks = ['jshint:beforeConcat', 'browserify', 'concat:sourceFiles', 'uglify',
             'jshint:afterConcat', 'concat:vendorFiles',
             'removelogging', 'jasmine', 'watch:full'
         ];
+        // always use force when watching
+        grunt.option('force', true);
+        grunt.task.run(tasks);
+    });*/
+    // Default task(s).
+    grunt.registerTask('default', function() {
+        var tasks = ['browserify', 'concat:sourceFiles', 'uglify', 'removelogging', 'watch:full'];
         // always use force when watching
         grunt.option('force', true);
         grunt.task.run(tasks);
