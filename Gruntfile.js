@@ -9,8 +9,12 @@ module.exports = function(grunt) {
                 //'<%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'build/<%= pkg.name %>.source.js',
+                src: 'build/<%= pkg.name %>.js',
                 dest: 'build/<%= pkg.name %>.min.js'
+            },
+            build2: {
+                src: 'build/<%= pkg.name %>.polyfill.js',
+                dest: 'build/<%= pkg.name %>.min.polyfill.js'
             }
         },
         jasmine: {
@@ -151,7 +155,7 @@ module.exports = function(grunt) {
                     'build/<%= pkg.name %>.js'
                 ],
                 // the location of the resulting JS file
-                dest: 'build/<%= pkg.name %>.source.js'
+                dest: 'build/<%= pkg.name %>.polyfill.js'
             },
             vendorFiles: {
                 options: {
